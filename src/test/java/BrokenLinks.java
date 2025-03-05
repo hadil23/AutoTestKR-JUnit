@@ -1,4 +1,3 @@
-package com.example.PracticeAutomation;
 
 
 import static org.junit.Assert.assertEquals;

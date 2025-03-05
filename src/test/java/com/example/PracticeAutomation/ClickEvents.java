@@ -59,6 +59,12 @@ public class ClickEvents {
             
             clickEvents.getBtnCow().click();
             assertEquals("Moo!", clickEvents.getMsgCow().getText());
+
+            clickEvents.takeScreenShot("element.clickeventsElement.jpg",clickEvents.getClickEventsTitle());
+            
+            
+            
+            
             
             
 			/*WebElement btn = driver

@@ -19,7 +19,7 @@
 @tag
 Feature: Animals Sounds 
  
-#@ready
+#@ready2
 #Scenario Outline: Click Events Animals Without DDT
 #    Given I am in page click evens
 #    When I click for the <animal>
@@ -31,45 +31,33 @@ Feature: Animals Sounds
 #      |pig    |Oink! |
 #      |cow    |Moo!  |
 
-@tag1
+@tag3
 Scenario Outline: Click Events Animals
     Given I am in page click events
     When I click for the "<animal>"
     Then I verify the "<sound>" displayed
-    Examples:
-      |animal |sound |
-      |cat    |Meow! |
-      |dog    |Woof! |
-      |pig    |Oink! |
-      |cow    |Moo!  |
+Examples:
+     |animal |sound |
+     |cat    |Meow! |   
+     |dog    |Woof! |
+     |pig    |Oink! |
+     |cow    |Moo!  |
   
   
-  
-# Scenario: Test cat sound
-#   Given I am in page click events
-#   
-#   When I click for the cat
-#   Then I verify the cat sound displayed
-#   
-#   When I click for the Dog
-#   Then I verify the Dog sound displayed
-#   
-#   When I click for the Pig
-#   Then I verify the Pig sound displayed
-#   
-#   When I click for the Cow
-#   Then I verify the Cow sound displayed
+ @tag1 
+ Scenario: Test cat sound
+   Given I am in page click events
+      
+   When I click for the cat
+   Then I verify the cat sound displayed
+   
+   When I click for the Dog
+   Then I verify the Dog sound displayed
+   
+   When I click for the Pig
+   Then I verify the Pig sound displayed
+   
+   When I click for the Cow
+   Then I verify the Cow sound displayed
 
     
-    
-
-# @tag2
-# Scenario Outline: Title of your scenario outline
-#   Given I want to write a step with <name>
-#   When I check for the <value> in step
-#   Then I verify the <status> in step
-# 
-#   Examples: 
-#     | name  | value | status  |
-#     | name1 |     5 | success |
-#     | name2 |     7 | Fail    |
